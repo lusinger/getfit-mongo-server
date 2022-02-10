@@ -8,4 +8,4 @@ const port = process.env.PORT || 3001;
 
 server.listen(port, () => {
   console.log(`${chalk.yellowBright('[SERVER]')} listening on port ${chalk.yellowBright(port)}`);
-})
+});
