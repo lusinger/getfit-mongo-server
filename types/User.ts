@@ -1,5 +1,6 @@
 interface UserType{
   id: number;
+  createdAt: Date,
   userName: string;
   mail: string;
   password: string;

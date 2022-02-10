@@ -1,6 +1,11 @@
 import mongoose from 'mongoose';
 
 const UserSchema = new mongoose.Schema({
+  createdAt: {
+    type: Date,
+    required: [true, 'createdAt must be provided'],
+    default: Date.now(),
+  },
   userName: {
     type: String,
     required: [true, 'userName must be provided'],
