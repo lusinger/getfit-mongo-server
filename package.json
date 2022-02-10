@@ -1,0 +1,29 @@
+{
+  "name": "getfit-mongo-server",
+  "version": "0.0.1",
+  "description": "Backend for getfit Angular application ",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./dist/server.js",
+    "build": "npx tsc --build && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lusinger/getfit-mongo-server.git"
+  },
+  "author": "Lukas Singer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lusinger/getfit-mongo-server/issues"
+  },
+  "homepage": "https://github.com/lusinger/getfit-mongo-server#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2"
+  }
+}

@@ -1,0 +1,14 @@
+# remove OS system files
+*.DS_Store
+
+# ignore all node packages
+/node_modules
+
+# ignore all .env files to protect sensitive data
+*.env
+
+# ignore all .key files to protect sensitive data
+*.key
+
+# remove build project
+/dist
