@@ -31,9 +31,6 @@ const verifyJWT = async (token: string): Promise<boolean> => {
     const isTokenValid = await jwt.verify(token, await getPrivateKey(process.env.BASEDIR + '/keys/jwt-private-key.key'), {algorithms: ['RS256']});
     return true;
   } catch (err) {
-    if(err instanceof jwt.TokenExpiredError){
-      return false;
-    }
     throw err;
   }
 }
