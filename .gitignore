@@ -8,6 +8,7 @@
 *.env
 
 # ignore all .key files to protect sensitive data
+/keys
 *.key
 
 # remove build project
