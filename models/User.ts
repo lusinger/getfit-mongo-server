@@ -53,6 +53,12 @@ const UserSchema = new mongoose.Schema({
   changePerWeek: {
     type: Number,
     required: [true, 'changePerWeek must be provided for calculations'],
+    min: 0,
+    max: 2,
+  },
+  activityRating: {
+    type: Number,
+    required: [true, 'changePerWeek must be provided for calculations'],
     enum: [1.2, 1.375, 1.55, 1.725, 1.9],
   },
   gender: {

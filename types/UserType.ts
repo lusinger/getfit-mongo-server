@@ -9,7 +9,8 @@ interface UserType{
   height: number;
   currentWeight: number;
   targetWeight: number;
-  changePerWeek: 1.2 | 1.375 | 1.55 | 1.725 | 1.9;
+  changePerWeek: number;
+  activityRating: 1.2 | 1.375 | 1.55 | 1.725 | 1.9;
   gender: 'male' | 'female';
   calorieGoal: number;
 }
