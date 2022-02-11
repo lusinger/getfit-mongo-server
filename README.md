@@ -11,3 +11,4 @@ First install all needed dependencies<br>
 Create a .env file in the root directory following properties need to be defined<br>
 
 -PORT = e.g. 3000
+-MONGODB_URI = connection string for your mongoDB
