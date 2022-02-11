@@ -29,7 +29,4 @@ server.use(express.json());
 server.use(cookieParser());
 server.use('/api/v1', verifyToken);
 
-server.listen(port, () => {
-  console.log(`${chalk.yellowBright('[SERVER]')} listening on port ${chalk.yellowBright(port)}`);
-});
 startServer();
