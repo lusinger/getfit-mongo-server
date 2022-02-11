@@ -8,6 +8,7 @@ dotenv.config();
 // import of custom modules
 import { verifyToken } from './middlewares/authenticate';
 import { connectDB } from './db/database';
+import { authRouter } from './routes/auth';
 
 const server = express();
 const port = process.env.PORT || 3001;
@@ -28,5 +29,6 @@ server.use(express());
 server.use(express.json());
 server.use(cookieParser());
 server.use('/api/v1', verifyToken);
+server.use('/auth', authRouter);
 
 startServer();
